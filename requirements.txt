@@ -2,3 +2,4 @@ astropy
 astroquery
 Flask
 Flask-Cors
+gunicorn
