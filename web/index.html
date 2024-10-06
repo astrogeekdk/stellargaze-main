@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StellarGaze</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navshadow"></div>
+    <div class="topnav" id="myTopnav">
+      <div class="logocontainer">
+        <img src="logo.png" alt="" />
+        <h1>StellarGaze</h1>
+      </div>
+      <div class="navelem">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#demo">Demo</a>
+        <a
+          href="https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/cygnus-a/"
+          >Team</a
+        >
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <section class="header">
+      <h1>Explore the Stars from<br />New Worlds</h1>
+      <h2>
+        Discover the universe from distant<br />exoplanets with
+        <b>StellarGaze.</b>
+      </h2>
+    </section>
+
+    <section class="cards">
+      <a href="/explore.html?planet=Kepler-22 b" target="_blank"
+        ><div class="card">
+          <h1>Kepler-22b</h1>
+          <img src="Kepler22b.png" alt="" />
+          <p>
+            Kepler-22b is a potentially habitable exoplanet located 600
+            light-years away.
+          </p>
+        </div></a
+      >
+      <a href="/explore.html?planet=Proxima Cen b" target="_blank"
+        ><div class="card">
+          <h1>Proxima Centauri b</h1>
+          <img src="ProximaCenb.png" alt="" />
+          <p>Orbits the closest star to the Sun, Proxima Centauri.</p>
+        </div></a
+      >
+      <a href="/explore.html?planet=TRAPPIST-1 b" target="_blank"
+        ><div class="card">
+          <h1>TRAPPIST-1e</h1>
+          <img src="TRAPPIST-1e.png" alt="" />
+          <p>One of seven Earth-sized planets in the TRAPPIST-1 system.</p>
+        </div></a
+      >
+      <a href="/explore.html?planet=55 Cnc e" target="_blank"
+        ><div class="card">
+          <h1>55 Cancri e</h1>
+          <img src="55cancari.png" alt="" />
+          <p>A hot, rocky planet possibly rich in carbon (diamond planet).</p>
+        </div></a
+      >
+      <a href="/explore.html?planet=HD 209458 b" target="_blank"
+        ><div class="card">
+          <h1>HD 209458 b (Osiris)</h1>
+          <img src="HD209458b.png" alt="" />
+          <p>A gas giant with an evaporating atmosphere.</p>
+        </div></a
+      >
+      <a href="/explore.html?planet=WASP-12 b" target="_blank"
+        ><div class="card">
+          <h1>WASP-12b</h1>
+          <img src="Wasp12b.png" alt="" />
+          <p>A "hot Jupiter" that is being tidally distorted by its star.</p>
+        </div></a
+      >
+      <a href="/explore.html?planet=LHS 1140 b" target="_blank"
+        ><div class="card">
+          <h1>LHS 1140b</h1>
+          <img src="LHS1140b.png" alt="" />
+          <p>
+            A rocky super-Earth in the habitable zone of a nearby red dwarf.
+          </p>
+        </div></a
+      >
+      <a href="/explore.html?planet=K2-18 b" target="_blank"
+        ><div class="card">
+          <h1>K2-18b</h1>
+          <img src="K2-18b.png" alt="" />
+          <p>
+            A potentially habitable planet that has water vapor in its
+            atmosphere.
+          </p>
+        </div></a
+      >
+      <a href="/explore.html?planet=Kepler-452 b" target="_blank"
+        ><div class="card">
+          <h1>Kepler-452b</h1>
+          <img src="Kepler452b.png" alt="" />
+          <p>
+            Often called "Earth's cousin" due to its similar size and distance
+            from its star.
+          </p>
+        </div></a
+      >
+    </section>
+
+    <section id="about">
+      <h1>ABOUT</h1>
+      <p>
+        <b>What is StellarGaze?</b><br />
+        StellarGaze is an innovative web app that brings you closer to the stars
+        by offering 3D views of celestial bodies as seen from exoplanets
+        orbiting distant stars. It's a powerful tool for both learning and
+        exploration, offering detailed visuals and interactive features for
+        space enthusiasts and professionals alike.
+        <br />
+        <br />
+        <b>Why Explore the Universe from Exoplanets?</b><br />
+        Earth's view of the universe is just one perspective. StellarGaze opens
+        up the stars from entirely new locations, letting you see how
+        constellations and stars shift across the galaxy. Travel beyond the
+        solar system and experience the beauty of the cosmos from alien worlds.
+      </p>
+
+	  <a href="/explore.html?planet=Kepler-22 b">
+	  <button class="explorebtn">Explore Planetarium</button>
+	</a>
+
+    </section>
+    <section id="demo">
+      <h1>DEMO OF STELLARGAZE</h1>
+      <iframe
+        src="https://www.youtube.com/embed/bb0FKhTpo5I"
+        title="Starship | Fourth Flight Test"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <footer>©2024 StellarGaze</footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
