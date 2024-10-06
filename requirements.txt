@@ -3,3 +3,4 @@ astroquery
 Flask
 Flask-Cors
 gunicorn
+pandas
