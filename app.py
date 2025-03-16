@@ -66,7 +66,7 @@ def get_exoplanets():
     df["app_mag"] = df["abs_mag"] + 5 * np.log10(df["dist_exo"]) - 5
 
     filtered_df = df[df["app_mag"]<mag_limit]
-    filtered_df = filtered_df[["x", "y", "z", "app_mag", 'SpType']]
+    filtered_df = filtered_df[["HIP", "x", "y", "z", "app_mag", 'SpType']]
     skycoord = SkyCoord(x=filtered_df["x"], y=filtered_df["y"], z=filtered_df["z"], representation_type='cartesian').spherical
 
     filtered_df["SKY"] = skycoord
@@ -74,9 +74,9 @@ def get_exoplanets():
     filtered_df["dec"] = skycoord.lat.deg
     filtered_df["dist"] = skycoord.distance
 
-    output = filtered_df[['ra', 'dec', 'dist', 'app_mag', 'SpType']].to_dict(orient='records')
+    output = filtered_df[["HIP", 'ra', 'dec', 'dist', 'app_mag', 'SpType']].to_dict(orient='records')
 
     return jsonify(output)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
